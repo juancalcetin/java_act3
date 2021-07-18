@@ -10,7 +10,6 @@ public class StandardDeck {
 
     public StandardDeck() {
         System.out.println("Las cartas en el deck son: ");
-        // Populate deck with all 52 available PlayingCards
         for (PlayingCard.Suit suit : PlayingCard.Suit.values()) {
             for (PlayingCard.Rank rank : PlayingCard.Rank.values()) {
                 deck.add(new PlayingCard(rank, suit));
