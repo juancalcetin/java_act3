@@ -9,7 +9,6 @@ public class StandardDeck {
     private Set<PlayingCard> deck = new LinkedHashSet<>();
 
     public StandardDeck() {
-        System.out.println("Las cartas en el deck son: ");
         for (PlayingCard.Suit suit : PlayingCard.Suit.values()) {
             for (PlayingCard.Rank rank : PlayingCard.Rank.values()) {
                 deck.add(new PlayingCard(rank, suit));
@@ -79,6 +78,7 @@ public class StandardDeck {
     }
 
     public Set<PlayingCard> getDeck() {
+        System.out.println("Las cartas en el deck son: ");
         return deck;
     }
 }
